@@ -69,7 +69,7 @@ Not all wells are useful in establishing the FWL elevation of the field. A few o
 
 ![Geolog_Image](FWL_Surface.png)
 
-Our estimated FWL surface is a plane but tilted with a high of 8178 feet TVDss on the West, dipping to the East to a maximum FWL elevation of 8214 feet TVDss. Tilted FWL’s are quite prevalent in Saudi Arabia due to dynamic aquifer pressures, tilted structures and even subduction, and those conditions could be present in the area of this field too.  The FWL Surface was then used with the estimated Thomeer parameters on each well to calculate the final Capillary Pressure based saturations for each well in the field. For the 3D model, the Thomeer parameters could have been distributed in the model, the FWL surface input and then Thomeer could have been used to estimate the original saturations for the field. 
+Our estimated FWL surface is a plane but tilted with a high of 8176 feet TVDss on the West, dipping to the East to a maximum FWL elevation of 8215 feet TVDss. Tilted FWL’s are quite prevalent in Saudi Arabia due to dynamic aquifer pressures, tilted structures and even subduction, and those conditions could be present in the area of this field too.  The FWL Surface was then used with the estimated Thomeer parameters on each well to calculate the final Capillary Pressure based saturations for each well in the field. For the 3D model, the Thomeer parameters could have been distributed in the model, the FWL surface input and then Thomeer could have been used to estimate the original saturations for the field. 
 
 The timing of drilling of each well is not understood, but HW-32 might be showing signs of some form of water encroachment as seen in the figure below. 
 
