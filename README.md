@@ -28,11 +28,11 @@ The following workflow and processing is suggested to interrogate, process, inte
 ##### Altair used to Interrogate the Costa Capillary Pressure curves and Petrophysical Rock Types (PRTs):
 ![Geolog_Image](Costa_Pc.gif)
 
-2) Run MultiMin for a solid log analysis model using the typical minerals found in thia reservoir; Limestone, Dolomite, and Illite. With MultiMin we always use environmentally corrected log data and use the calculated uncertainties for each log curve employed in the analysis. 
+2) Normally we would run MultiMin for a solid log analysis model using the typical minerals found in thia reservoir; Limestone, Dolomite, and Illite. With MultiMin we always use environmentally corrected log data and use the calculated uncertainties for each log curve employed in the analysis. However, to make this dataset more universal, we have employeed python to perform our determinstic log analyis of the 17 HW wells. We received these data as las files with a file of log header data inlcuiding X,Y locations, KB elevation and TD. 
 
-3) Use available core data from the representative reservoir/field to build a petrophysical model to estimate permeability for all wells in field using either Geolog's Facimage or our python loglan using kNN using normalized input data and weighted by Euclidean distances for each of the nearest neighbors. 
+3) Use available core data from the representative reservoir/field to build a petrophysical model to estimate permeability for all wells in field using Geolog's Facimage. Our ploan is to include a python loglan using kNN with normalized input data, weighted by Euclidean distances for each of the nearest neighbors to estimate permeability for each well. 
 
-4) Using the kNN estimated permeability and calculated Total Porosity (PHIT) from MultiMin, we query Costa's core database to predict the following Petrophysical results:
+4) Using the kNN estimated permeability and calculated Total Porosity (PHIT) from MultiMin, we queryied Costa's core database to predict the following Petrophysical results:
     - Thomeer Capillary Pressure parameters (Pdi, Gi and BVocci) for each pore system i over the reservoir interval
     - Estimate the most dominant pore throat diameter at each level in the well calculated from the Thomeer parameters G and Pd. 
 
@@ -40,6 +40,13 @@ The following workflow and processing is suggested to interrogate, process, inte
 
 ![Geolog_Image](Thomeer_output.png)
 
+We did perform a Free Water Level (FWL) seach for each well. 
+
+![Geolog_Image](fwl_search.gif)
+
+Not all wells are useful in establishing the FWL. A few of the wells were too high and all we really were estimating was the Base of Reservoir(BOR) for those wells. There were also a few wells that were near 100% wet, and they were not used to establish the FWL surface. Eliminatiing these wells allowed us to establish the following FWL surface for this reservoir:
+
+![Geolog_Image](FWL_Surface.png)
 
 
 ### RESOURCES:
