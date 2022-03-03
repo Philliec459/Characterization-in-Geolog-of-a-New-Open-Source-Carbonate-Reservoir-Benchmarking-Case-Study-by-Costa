@@ -41,7 +41,7 @@ The following workflow and processing are suggested to interrogate, process, int
     - Thomeer Capillary Pressure parameters (Pdi, Gi and BVocci) for each pore system, i, over the entire reservoir interval for Capillary Pressure-based saturations
     - Estimate the most dominant pore throat diameter at each level in the well calculated from the Thomeer parameters G and Pd. This exact mode of the pore throat distribution is calculated using the following equation:
 
-	*Mode of Pore Throat Distribution (microns) = exp(-1.15 * G1) * (214/Pd1)*
+		*Mode of Pore Throat Distribution (microns) = exp(-1.15 * G1) * (214/Pd1)*
 
 5) Use the Thomeer Capillary Pressure parameters to model saturations based on the buoyancy due to fluid density differences at the height above the Free Water Level (FWL). In this instance we compare the Bulk Volume Oil (BVO) from our analysis vs. BVO from Thomeer-based capillary pressure saturations. We have used BVO since BVO is pore volume weighted, and Sw is not.
 
