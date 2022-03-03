@@ -47,6 +47,8 @@ This exact Mode of the Pore Throat Distribution (PTD) is what Winland is trying 
 
 We used this mode to partition our data into Petrophysical Rock Types. If the Mode > 2 microns, then the PRT was a Macro porous rock. If the Mode > 0.1 micron and less that 2 microns, then this was Meso porous rock. If the Mode < 0.1 microns, then this rock was Micro porous rock. This is still work in progress. 
 
+![Geolog_Image](Pc_PRT.png)
+
 5) Use the Thomeer Capillary Pressure parameters to model saturations based on the buoyancy due to fluid density differences at the height above the Free Water Level (FWL). In this instance we compare the Bulk Volume Oil (BVO) from our analysis vs. BVO from Thomeer-based capillary pressure saturations. We have used BVO since BVO is pore volume weighted, and Sw is not.
 
 ![Geolog_Image](Thomeer_output.png)
