@@ -36,13 +36,17 @@ The following workflow and processing is suggested to interrogate, process, inte
     - Thomeer Capillary Pressure parameters (Pdi, Gi and BVocci) for each pore system i over the reservoir interval
     - Estimate the most dominant pore throat diameter at each level in the well calculated from the Thomeer parameters G and Pd. 
 
-5) Use the Thomeer Capillary Pressure parameters to model saturations based on the buoyancy due to fluid density differences at the height above the Free Water Level (FWL). In this instance we compare the Bulk Volume Oil (BVO) from MultiMin vs. BVO from Thomeer-based capillary pressure saturations since BVO is pore volume weighted.
+5) Use the Thomeer Capillary Pressure parameters to model saturations based on the buoyancy due to fluid density differences at the height above the Free Water Level (FWL). In this instance we compare the Bulk Volume Oil (BVO) from our analysis vs. BVO from Thomeer-based capillary pressure saturations, We use BVO since BVO is pore volume weighted.
 
 ![Geolog_Image](Thomeer_output.png)
 
 We did perform a Free Water Level (FWL) seach for each well. 
 
 ![Geolog_Image](fwl_search.gif)
+
+This is an example of the output from a typical FWL search:
+
+![Geolog_Image](FWLSearch.png)
 
 Not all wells are useful in establishing the FWL. A few of the wells were too high and all we really were estimating was the Base of Reservoir(BOR) for those wells. There were also a few wells that were near 100% wet, and they were not used to establish the FWL surface. Eliminatiing these wells allowed us to establish the following FWL surface for this reservoir:
 
