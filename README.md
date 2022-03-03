@@ -1,6 +1,8 @@
 # Characterization-of-a-New-Open-Source-Carbonate-Reservoir-Benchmarking-Case-Study-by-Costa
 We have used the new hierarchical carbonate reservoir benchmarking case study created by Costa Gomes J, Geiger S, Arnold D to be used for reservoir characterization, uncertainty quantification and history matching(1). 
 
+# VERY ROUGH DRAFT, and not for public use at this time
+
 In this repository we have used this new hierarchical carbonate reservoir benchmarking case study with a comprehensive reservoir characterization database including well logs, routine and Special Core Analysis, 3D static and dymanic models and dynamic data including production and formation pressures as created by Costa, Geiger and Arnold. 
 
 We used all core data, 17 well logs and the dynamic data in our Petrophysical characterization of this carbonate reservoir. We also included the full Geolog project with Geolog python loglans and data.
