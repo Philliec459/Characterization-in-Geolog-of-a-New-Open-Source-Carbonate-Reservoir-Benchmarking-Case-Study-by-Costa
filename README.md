@@ -39,9 +39,13 @@ The following workflow and processing are suggested to interrogate, process, int
 4) Using the kNN estimated permeability and calculated Total Porosity (PHIT) from our log analysis, we queried Costa's core database to predict the following Petrophysical results:
 
     - Thomeer Capillary Pressure parameters (Pdi, Gi and BVocci) for each pore system, i, over the entire reservoir interval for Capillary Pressure-based saturations
-    - Estimate the most dominant pore throat diameter at each level in the well calculated from the Thomeer parameters G and Pd. This exact mode of the pore throat distribution is calculated using the following equation:
+    - Estimate the most dominant pore throat diameter at each level in the well calculated from the Thomeer parameters G and Pd using the Buiting equation. This exact mode of the pore throat distribution is calculated using the following Buiting equation:
 
-			*Mode of Pore Throat Distribution (microns) = exp(-1.15 * G1) * (214/Pd1)*
+			Mode of Pore Throat Distribution (microns) = exp(-1.15 * G1) * (214/Pd1)
+
+This exact Mode of the Pore Throat Distribution (PTD) is what Winland is trying to accomplish with r35 and Amaefule with FZI; however, they are not exact. The Mode of the PTD calculated from the Buiting equation is taken directly from the Capillary Pressure data and is the exact mode that correlates to other petrophysical parameters extremely well. 
+
+We used this mode to partition our data into Petrophysical Rock Types. If the Mode > 2 microns, then the PRT was a Macro porous rock. If the Mode > 0.1 micron and less that 2 microns, then this was Meso porous rock. If the Mode < 0.1 microns, then this rock was Micro porous rock. This is still work in progress. 
 
 5) Use the Thomeer Capillary Pressure parameters to model saturations based on the buoyancy due to fluid density differences at the height above the Free Water Level (FWL). In this instance we compare the Bulk Volume Oil (BVO) from our analysis vs. BVO from Thomeer-based capillary pressure saturations. We have used BVO since BVO is pore volume weighted, and Sw is not.
 
