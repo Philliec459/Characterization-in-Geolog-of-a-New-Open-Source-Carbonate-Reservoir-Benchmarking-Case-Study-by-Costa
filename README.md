@@ -48,6 +48,10 @@ Not all wells are useful in establishing the FWL. A few of the wells were too hi
 
 ![Geolog_Image](FWL_Surface.png)
 
+This FWL Surface was then used with the estimated Thomeer parameters for each well to calculate Capillary Pressure based saturations for each well:
+
+![Geolog_Image](Thomeer_sats.png)
+
 
 ### RESOURCES:
 https://researchportal.hw.ac.uk/en/datasets/costa-model-hierarchical-carbonate-reservoir-benchmarking-case-st
