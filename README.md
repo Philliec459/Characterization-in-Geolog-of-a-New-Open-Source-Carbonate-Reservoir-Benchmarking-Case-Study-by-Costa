@@ -1,7 +1,7 @@
 # Characterization-of-a-New-Open-Source-Carbonate-Reservoir-Benchmarking-Case-Study-by-Costa
 We have used the new hierarchical carbonate reservoir benchmarking case study created by Costa Gomes J, Geiger S, Arnold D to be used for reservoir characterization, uncertainty quantification and history matching. 
 
-# VERY ROUGH DRAFT, and not for public use at this time
+# This is still a ROUGH DRAFT
 
 # Introduction
 **According to Costa, Geiger and Arnold(1):**
