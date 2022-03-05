@@ -50,7 +50,9 @@ This exact mode of the Pore Throat Distribution (PTD) is calculated using the fo
 
 This exact Mode of the PTD is what Winland was trying to accomplish with his r35 or Amaefule with FZI; however, they are not exact. We have another GitHub repository under Phillips459 that shows a comparison of these rock typing techniuqes that should be used to see an actual comparison of the different rock typing methonds using the Mode of the PTD calculated from Ed Clerke's Arab D carbonate core dataset with Thomeer Parameters. 
 
-https://github.com/Philliec459/Altair-used-to-Assess-Rock-Typing-Techniques-Comparing-to-Winland-r35-and-Amaefule-FZI-RQI
+https://github.com/Philliec459/NEW-Carbonate-Characterization-Workflow-Jupiter-Notebook-Modules-with-Clerke-Arab-D-Calibration-Data
+
+Use the *1_Workflow_Intro_with_Altair_Interrogation_Log_and_RosettaStone_Data.ipynb* Jupyter Notebook to see a comparison of numerous Rock Typing methods on Clerke's Arab D carbonate core database.
 
 The Mode of the PTD calculated from the Buiting equation is taken directly from the Capillary Pressure data and is the exact mode of the PTD that correlates to other petrophysical parameters extremely well. We use the Mode of the PTD to model the petrophysical properties in the 3D model too. 
 
