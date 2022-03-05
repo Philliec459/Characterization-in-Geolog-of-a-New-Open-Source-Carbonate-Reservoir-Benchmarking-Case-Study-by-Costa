@@ -1,8 +1,8 @@
 # Characterization-of-a-New-Open-Source-Carbonate-Reservoir-Benchmarking-Case-Study-by-Costa
 We have used the new hierarchical carbonate reservoir benchmarking case study created by Costa Gomes J, Geiger S, Arnold D to be used for reservoir characterization, uncertainty quantification and history matching. 
 
-# This is still a ROUGH DRAFT, but we do have an initial Geolog Project in a zip file for you to try with Geolog python loglans. 
-- We will add Jupyter Notebooks soon with full documentation on the carbonate reservoir characterization process
+# This is WORK IN PROGRESS, but we do have an initial Geolog Project in a zip file for you to download with Geolog python loglans. 
+- We will also add Jupyter Notebooks soon with full documentation on the carbonate reservoir characterization process
 
 # Introduction
 **According to Costa, Geiger and Arnold(1):**
