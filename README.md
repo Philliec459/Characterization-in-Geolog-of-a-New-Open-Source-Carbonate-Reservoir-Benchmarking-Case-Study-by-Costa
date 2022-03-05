@@ -1,7 +1,8 @@
 # Characterization-of-a-New-Open-Source-Carbonate-Reservoir-Benchmarking-Case-Study-by-Costa
 We have used the new hierarchical carbonate reservoir benchmarking case study created by Costa Gomes J, Geiger S, Arnold D to be used for reservoir characterization, uncertainty quantification and history matching. 
 
-# This is still a ROUGH DRAFT
+# This is still a ROUGH DRAFT, but we do have an initial Geolog Project in a zip file for you to try with Geolog python loglans. 
+- We will add Jupyter Notebooks soon with full documentation on the carbonate reservoir characterization process
 
 # Introduction
 **According to Costa, Geiger and Arnold(1):**
@@ -71,7 +72,7 @@ Not all wells are useful in establishing the FWL elevation of the field. A few o
 
 Our estimated FWL surface is a plane but tilted with a high of 8176 feet TVDss on the West, dipping to the East to a maximum FWL elevation of 8215 feet TVDss. Tilted FWL’s are quite prevalent in Saudi Arabia due to dynamic aquifer pressures, tilted structures and even subduction, and those conditions could be present in this field too.  The FWL Surface was then used with the estimated Thomeer parameters on each well to calculate the final Capillary Pressure based saturations for each well in the field. For the 3D model, the Thomeer parameters could have been distributed in the model, the FWL surface input and then Thomeer could have been used to estimate the original saturations for the field. 
 
-The timing of drilling of each well is not understood, but HW-32 might be showing signs of some form of water encroachment as seen in the figure below. 
+The timing of drilling of each well is not understood, but HW-32 might be showing signs of water encroachment as seen in the figure below. 
 
 ![Geolog_Image](HW-32.png)
 
