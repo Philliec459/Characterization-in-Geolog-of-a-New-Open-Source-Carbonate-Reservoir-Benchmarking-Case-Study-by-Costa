@@ -3,7 +3,7 @@ We have used the new hierarchical carbonate reservoir benchmarking case study cr
 
 ---
 ># This is WORK IN PROGRESS, but we do have an initial Geolog Project in a zip file for you to download with Geolog python loglans. 
-- We will also add Jupyter Notebooks soon with full documentation on the carbonate reservoir characterization process
+>- We will also add Jupyter Notebooks soon with full documentation on the carbonate reservoir characterization process
 ---
 
 # Introduction
