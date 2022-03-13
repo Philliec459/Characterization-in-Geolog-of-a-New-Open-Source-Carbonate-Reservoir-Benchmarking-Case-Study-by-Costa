@@ -6,9 +6,11 @@ We have used the new hierarchical carbonate reservoir benchmarking case study cr
 > **This new Geolog project has an improved permeability model using kNN and we are using Scipy optimization to perform the lithology calculations.**
 >- We have Jupyter Notebooks with full documentation on the carbonate reservoir characterization process at the following link:
 >
->https://github.com/Philliec459/Jupyter-Notebooks_for-Characterization-of-a-New-Open-Source-Carbonate-Reservoir-Benchmarking-Case-St
+>-https://github.com/Philliec459/Jupyter-Notebooks_for-Characterization-of-a-New-Open-Source-Carbonate-Reservoir-Benchmarking-Case-St
 >
-
+> **To load the intened layouts and software used in the workflow, after launching Well, then please open the HW.well_workspace.**
+>
+> **There is also a workspace for viewing the High Presure Mercury Injection (HPMI) core data that can be loaded using the Thomeer.well_workspace.**
 ---
 
 # Introduction
@@ -19,9 +21,9 @@ We have used the new hierarchical carbonate reservoir benchmarking case study cr
 > 
 > *The result of this research is a semi-synthetic but geologically realistic suite of carbonate reservoir models that capture a wide range of geological, petrophysical, and geomodelling uncertainties and that can be history-matched against an undisclosed, synthetic 'truth case'. The models and dataset are made available as open-source to analyze several issues related to testing new numerical algorithms for geological modelling, uncertainty quantification, reservoir simulation, history matching, optimization and machine learning.*
 
-In this GitHub repository we have used a new, comprehensive carbonate reservoir characterization database from Costa, Geiger and Arnold (1). We employed all the available well logs, Routine Core Analysis (RCA) and Special Core Analysis (SCAL and implemented our standard carbonate reservoir characterization workflow as discussed by Phillips et al. (2). Considering the scope of this project repository, we did not use Costa's 3D static or dynamic models, but we did employ their time-series dynamic production and formation pressure data by well using Spotfire to visualize the pressure and production data and better understand the dynamic aspects of this reservoir. This is a rich dataset that needs to be explored further, more than what is presented in the scope of this project.  For those working with carbonate data and wanting to apply your characterization skills, this is a perfect dataset to work with and even publish your findings. Released carbonate field data is like this is practically nono-existant. Enjoy!
+In this GitHub repository we have used a new, comprehensive carbonate reservoir characterization database from Costa, Geiger and Arnold (1). We employed all the available well logs, Routine Core Analysis (RCA) and Special Core Analysis (SCAL and implemented our standard carbonate reservoir characterization workflow as discussed by Phillips et al. (2). Considering the scope of this project repository, we did not use Costa's 3D static or dynamic models, but we did employ their time-series dynamic production and formation pressure data by well using Spotfire. Spotfire is very good at visualizing the pressure and production data over time to better understand the dynamic aspects of this reservoir. This is a rich dataset that needs to be explored further; more than what is presented within the scope of this project.  For those working with carbonate data and wanting to apply your characterization skills, this is a perfect dataset to work with and even publish your findings. Released carbonate field data like this is practically nono-existant. Enjoy! We would like to thank Costa, Geiger and Arnold for their contribution to science.
 
-The provided RCA and SCAL core data as well as the 17 well logs in the form of las files were all imported into Geolog and avaialble in this repository as a Geolog project.  We used these data extensively in our Petrophysical evaluation. The following depth plot shows a typical well from the field and the type of analysis performed on each well. 
+The provided RCA and SCAL core data as well as the 17 well logs in the form of las files were all imported into Geolog and avaialble in this repository as a Geolog project.  We did not have sufficient well log header data to environmentally correct the log data, but we might look at adding a section  of normalization of the data. We used these data extensively in our Petrophysical evaluation. The following depth plot shows a typical well from the field and the type of analysis performed on each well. 
 
 ![Geolog_Image](Results.png)
 
