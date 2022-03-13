@@ -2,12 +2,13 @@
 We have used the new hierarchical carbonate reservoir benchmarking case study created by Costa Gomes J, Geiger S, Arnold D to be used for reservoir characterization, uncertainty quantification and history matching. 
 
 ---
-># This is WORK IN PROGRESS, but we do have an initial Geolog Project in a zip file for you to download with Geolog python loglans. 
+># This is still WORK IN PROGRESS, but we do have an improved Geolog Project in a zip file for you to download with Geolog python loglans. 
+> **This new Geolog project has an improved permeability model using kNN and we are using Scipy optimization to perform the lithology calculations.**
 >- We have Jupyter Notebooks with full documentation on the carbonate reservoir characterization process at the following link:
 >
 >https://github.com/Philliec459/Jupyter-Notebooks_for-Characterization-of-a-New-Open-Source-Carbonate-Reservoir-Benchmarking-Case-St
 >
->![Geolog_Image](work_in_progress.png)
+
 ---
 
 # Introduction
@@ -39,7 +40,7 @@ The following workflow and processing were used to interrogate, process, interpr
 
 ![Geolog_Image](Costa_Pc2.gif)
 
-2) Normally we would run MultiMin for our log analysis model using the typical minerals found in this carbonate reservoir; Limestone, Dolomite, and Illite. However, to make this dataset more universal, we have employed python to perform both our deterministic and optimization types of log analysis for the 17 wells we have with log data. The Geolog loglan code is provided in the Geolog project. 
+2) Normally we would run MultiMin for our log analysis model using the typical minerals found in this carbonate reservoir; Limestone, Dolomite, and Illite. However, to make this dataset more universal, we have employed python's Scipy to perform our optimization types of log analysis for the 17 wells we have with log data. The Geolog loglan code is provided in the Geolog project for all steps along the way. 
 
 We received the log data as 17 las files with a text file of log header data including X,Y locations, KB elevation and TD.  There were no directional survey data provided. It is assumed that these wells are all vertical wells, and TVDss was calculated using the KB Elevations for each well. 
 
