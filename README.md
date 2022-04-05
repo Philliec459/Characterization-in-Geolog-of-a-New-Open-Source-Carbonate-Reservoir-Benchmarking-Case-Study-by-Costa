@@ -25,13 +25,13 @@ In this GitHub repository we have used a new, comprehensive carbonate reservoir 
 
 The provided RCA and SCAL core data as well as the 17 well logs in the form of las files were all imported into Geolog and available in this repository as a Geolog project.  We did not have sufficient well log header data to environmentally correct the log data, but we might look at adding a section of normalization of log data. We used these data extensively in our Petrophysical evaluation. The following depth plot shows a typical well from the field and the type of analysis performed on each well. 
 
-![Geolog_Image](Results.png)
+>![Geolog_Image](Results.png)
 
 The reservoir characterization process used in this repository follows a tried and proven workflow as described by Phillips et al. (2) in the characterization of another carbonate reservoir, the Arab D carbonate reservoirs from Saudi Arabia. Core Porosity, Permeability, Petrophysical Rock Types (PRT), Capillary Pressure and capillary pressure-based saturations are all estimated or calculated for each of the 17 wells using this workflow. Just as with our previous studies, the provided core analysis database for this project was used as the foundation and calibration to these petrophysical interpretations and estimations. 
 
 Costa also provided 110 High Pressure Mercury Injection (HPMI) core samples that had RCA Porosity and Permeability too. We performed a Thomeer Parameter Analysis on each of the HPMI samples to establish our own, reservoir specific Thomeer Parameter Capillary Pressure core database that was used to model petrophysical properties, Petrophysical Rock Types (PRT) and saturations. We conducted the Thomeer analysis in Geolog by fitting a Thomeer hyperbola to each of the 110 HPMI samples to establish the Thomeer Capillary Pressure parameters for each sample. A python loglan was first used to load the High-Pressure Mercury Injection (HPMI) Core data directly from the Costa SCAL dataset into a Geolog Well, and then a Geolog loglan was written to model the HPMI data using the Thomeer parameters creating the Thomeer hyperbola fitting the Pc data. We employed Scipy's curve_fit in python to fit the Capillary Pressure curve from this analysis that match the actual HPMI sample in over 95% of the samples. As with any core database, there were a few questionable samples that either had questionable RCA or the Pc curves themselves. A few samples were difficult to fit probably due undistinguishable multiple pore systems. Further work needs to be done on the Thomeer analysis of the HPMI data to extract more data associated with the second pore system. At this point we have too little data to model the second pore system. 
 
-![Geolog_Image]( Thomeer_Parameter_fitting_Geolog4.gif)
+>![Geolog_Image]( Thomeer_Parameter_fitting_Geolog4.gif)
 
 ### Suggested Carbonate Workflow:
 The following workflow and processing were used to interrogate, process, interpret and model the petrophysical properties for this benchmark carbonate reservoir using Costa's RCA and High-Pressure Mercury Injection core database as calibration. The workflow consists of the following steps:
@@ -40,7 +40,7 @@ The following workflow and processing were used to interrogate, process, interpr
 
 **Altair used to Interrogate the Costa Capillary Pressure curves and Petrophysical Rock Types (PRTs):**
 
-![Geolog_Image](Costa_Pc2.gif)
+>![Geolog_Image](Costa_Pc2.gif)
 
 2) Normally we would run MultiMin for our log analysis model using the typical minerals found in this carbonate reservoir; Limestone, Dolomite, and Illite. However, to make this dataset more universal, we have employed python's Scipy Optimize to perform our log analysis of the 17 wells with log data. The Geolog loglan code is provided in the attached Geolog project for all steps in the workflow. 
 
@@ -65,37 +65,37 @@ The Mode of the PTD calculated from the Buiting equation is taken directly from 
 
 We used the Mode of the PTD to initially partition our data into Petrophysical Rock Types (PRT). We assigned a Macro porous PRT to the level in the well if the Mode > 2 microns. If the Mode > 0.1 micron but Mode < 2 microns, then this was considered to be a Meso porous PRT. If the Mode < 0.1 microns, then this rock was considered to be a Micro porous PRT. This is still work in progress. The following image shows all 110 HPMI Capillary Pressure curves with the PRT designation of Macro porous rock being cyan, Meso being yellow and Micro being brown. 
 
-![Geolog_Image](Pc_PRT.png)
+>![Geolog_Image](Pc_PRT.png)
 
 5) The Thomeer Capillary Pressure parameters are used to model saturations based on the buoyancy due to fluid density differences at a given height above the Free Water Level (FWL). In this instance we compare the Bulk Volume Oil (BVO) from our analysis vs. BVO from Thomeer-based capillary pressure saturations to judge our Capillary Pressure model. We have used BVO since BVO is pore volume weighted.
 
-![Geolog_Image](Thomeer_output.png)
+>![Geolog_Image](Thomeer_output.png)
 
 We did perform a Free Water Level (FWL) search for each well to establish the FWL for this reservoir. As discussed above we used the Thomeer parameters to model Capillary Pressure based saturations as shown below:
 
-![Geolog_Image](Thomeer_sats.png)
+>![Geolog_Image](Thomeer_sats.png)
 
 In our FWL search, we varied the FWL from the highest potential FWL elevation (8100' TVDss) down to the lowest potential FWL elevation for the reservoir (8300' TVDss) and estimate the FWL for each well where the error difference between the BVO from logs vs. Capillary Pressure was at a minimum. 
 
-![Geolog_Image](fwl_search.gif)
+>![Geolog_Image](fwl_search.gif)
 
 This is an example of the single well output from our FWL search. This FWL search was performed on all wells in the study. in the printout example below, we varied the FWL by 10-foot increments, but in our actual study we varied the initial FWL estimates in 1 foot increments. 
 
-![Geolog_Image](FWLSearch.png)
+>![Geolog_Image](FWLSearch.png)
 
 Not all wells are useful in establishing the FWL elevation of the field. A few of the wells were too high on structure where were we were really estimating the Base of Reservoir (BOR). There were also a few wells that were nearly 100% wet, and they too were not used to establish the final FWL surface. Eliminating these wells allowed us to establish the following FWL surface for this reservoir from a few key wells as shown below:
 
-![Geolog_Image](FWL_Surface.png)
+>![Geolog_Image](FWL_Surface.png)
 
 Our estimated FWL surface is a plane but tilted with a high elevation of 8204 feet TVDss on the West, dipping to the East to a maximum FWL elevation of 8270 feet TVDss. Tilted FWL’s are quite prevalent in Saudi Arabia due to dynamic aquifer pressures, tilted structures and even subduction. We are not as familiar with the location of this field, but some of these same conditions could have been present in this field too. The FWL Surface was then used with the estimated Thomeer parameters on each well to calculate the final Capillary Pressure based saturations on each well in the field. The timing of drilling of each well is not understood, but HW-32 might be showing signs of water encroachment as seen in the figure below.  
 
-![Geolog_Image](HW-32.png)
+>![Geolog_Image](HW-32.png)
 
 For the 3D static model, the Thomeer parameters on each well can be distributed throughout the model or calculated from the Mode of the PTD that was calculated from a distributed Porosity and Permeability in the 3D static, fine-grid model. The points of intersection of the FWL surface at each well is then used to build the FWL plane. This FWL surface is then used with the modeled Thomeer parameters to estimate the original saturations for the field prior to production estimating OOIP from the FWL and above. 
 
 Finally, as with most of our studies we want to be able to integrate our Petrophysical findings with the dynamic production and pressure data to better understand the productive characteristics of this reservoir to be able to maximize recovery with sustained production over the life of this field.
 
-![Geolog_Image](Costa_Spotfire.png)
+>![Geolog_Image](Costa_Spotfire.png)
 
 ### RESOURCES:
 https://researchportal.hw.ac.uk/en/datasets/costa-model-hierarchical-carbonate-reservoir-benchmarking-case-st
